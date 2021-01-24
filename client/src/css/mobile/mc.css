@@ -1,0 +1,226 @@
+#mc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#left-mc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list {
+    border:2px #c4161b solid;
+    padding :4px;
+    border-radius: 4px;
+    height:fit-content;
+}
+.list > * {
+    margin: 0px;
+    color: White;
+}
+ul{
+    margin: 0px;
+}
+#Admins{
+    margin-left:15px;
+}
+.ServerInfo {
+    margin-left: 15px;
+}
+.ServerInfo a{
+    text-decoration: none;
+    text-decoration: underline;
+    color:white;
+}
+.ServerInfo a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+    color:rgb(200,200,255);
+    font-size: 18px;
+}
+.ServerInfo p{
+    margin-left:5px;
+    color:rgb(215,215,215);
+    font-size:12px;
+}
+.ServerStats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #101014;
+}
+@media only screen 
+and (max-width : 700px) {
+    #mc{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:40px;
+    }
+    .ServerStats{  
+        flex-direction: row;
+    }
+}
+#serverStatChild{
+    padding: 5px;
+    padding-right: 10px;
+    margin: 5px;
+    margin-top: 0px;
+    width: 180px;
+}
+#servStatus{
+    border-radius: 5px;
+    padding-left:3px;
+    padding-right: 3px;
+    margin-left: 5px;
+}
+.statChild{
+    display: flex;
+    width:175px;
+}
+#playerCountChild{
+    padding-left:3px;
+    padding-right: 3px;
+    margin-left: 5px;
+}
+#playerList{
+    border:2px white solid;
+    border-radius: 5px;
+    overflow-y: scroll;
+    max-width: 170px;
+    height: 130px;
+    background: rgb(14,74,164);
+    background: linear-gradient(120deg, rgba(14,74,164,1) 0%, rgba(0,0,0,1) 100%);
+    padding:0px;
+    margin:0px;
+}
+#playerList p{
+    margin-left: 5px;
+    color: white;
+}
+#playerList::-webkit-scrollbar {
+    display: none;
+}
+/*///////////// MC MAPS //////////////*/
+.ServerBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101014;
+    width: fit-content;
+}
+.ServerBanner h1{ 
+    border-bottom: 2px black solid;
+    font-size:3vh;
+    text-align: center;
+    font-family: varela;
+    color:white;
+}
+.map-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.link{
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom:5px;
+    margin-right:5px;
+    border-radius: 10px;
+    transition: all 300ms linear;
+    text-decoration: none;
+    color:white;
+    justify-content: center;
+    max-width:300px;
+    max-height:300px;
+    width: 20vw;
+    height: 20vw;
+    background-color: #101014;
+}
+.link h2{
+        color: grey;
+        font-size:30px;
+}
+@media only screen 
+and (max-width : 660px) {
+    .link h2{
+        font-size:18px;
+    }
+}
+.link:hover{
+    padding-right:3%;
+    padding-left:3%;
+    padding-bottom:6%;
+}
+.ServerMap{
+    font-size:18px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+    height: 40px;
+    position: relative;
+    transition: all 250ms linear;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    font-family: varela;
+    align-items: center;
+}
+.ServerMap p{
+    font-size: 17px;
+}
+@media only screen 
+and (max-width : 660px) { 
+    .ServerMap p{
+        font-size: 17px;
+    }
+}
+.offlineMap{
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    font-size: 50px;
+    color:rgb(100,100,100);
+}
+#deadSurvival{
+    background-image: url(../img/survival2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    pointer-events: none;
+}
+#pveSurvival{
+    background-image: url(../../img/survival2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#deadCreative{
+    background-image: url(../../img/creative2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    pointer-events: none;
+}
+#pveCreative{
+    background-image: url(../../img/creative2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#deadAdmin{
+    background-image: url(../../img/admin2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    pointer-events: none;
+}
+#pveAdmin{
+    background-image: url(../../img/admin2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

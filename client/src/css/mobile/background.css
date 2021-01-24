@@ -1,0 +1,91 @@
+.streaks{
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    right:0px;
+}
+.streaks li{
+    position: absolute;
+    border-radius: 4px;
+    animation: animate 50s linear infinite;
+    list-style: none;
+    transform: rotate(-45deg);
+}
+.streaks li:nth-child(1){
+    width: 100px;
+    height: 5px;
+    top: 20vh;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    background-color: #c4161b;
+}
+.streaks li:nth-child(2){
+    width: 75px;
+    height: 5px;
+    top: 15vh;
+    animation-delay: 0s;
+    animation-duration: 25s;
+    background-color: rgb(196,22,27);
+    
+}
+.streaks li:nth-child(3){
+    width: 150px;
+    height: 5px;
+    top: 1vh;
+    animation-delay: 0s;
+    animation-duration: 25s;
+    background-color: rgb(100,22,27);
+}
+.streaks li:nth-child(4){
+    width: 200px;
+    height: 5px;
+    top: 0vh;
+    right:50vw;
+    animation-delay: 0s;
+    animation-duration: 45s;
+    background-color: rgb(100,22,27);
+}
+.streaks li:nth-child(5){
+    width: 100px;
+    height: 5px;
+    top: 0vh;
+    right:40vw;
+    animation-delay: 0s;
+    animation-duration: 34s;
+    background-color: rgb(50,22,27);
+}
+.streaks li:nth-child(6){
+    width: 50px;
+    height: 5px;
+    top: 0vh;
+    right:0vw;
+    animation-delay: 0s;
+    animation-duration: 14s;
+    background-color: rgb(150,22,27);
+}
+.streaks li:nth-child(7){
+    width: 90px;
+    height: 5px;
+    top: 0vh;
+    right:-35vw;
+    animation-delay: 0s;
+    animation-duration: 14s;
+    background-color: rgb(50,22,27);
+}
+.streaks li:nth-child(8){
+    width: 163px;
+    height: 5px;
+    top: 0vh;
+    right:35vw;
+    animation-delay: 0s;
+    animation-duration: 14s;
+    background-color: rgb(150,22,27);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) translateX(0) rotate(-45deg);
+    }
+    100%{
+        transform: translateY(100vh) translateX(-100vh) rotate(-45deg);
+    }
+}
