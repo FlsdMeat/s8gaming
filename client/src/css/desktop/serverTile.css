@@ -1,0 +1,37 @@
+.mcTile{
+    border:2px#c4161b solid;
+    padding: 2px 5px;
+    border-radius: 2%;
+    max-height:154px;
+    width:fit-content;
+    min-width: 208px;
+    max-width: 218px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.serverTitle{
+    display: flex;
+    justify-content: flex-start;
+}
+.serverTitle h2{
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.playerlist{
+    height:60px;
+    border:1px red solid;
+    background-color: rgb(122,23,27);
+    overflow-y: scroll;
+}
+.playerlist::-webkit-scrollbar{
+    display: none;
+}
+.playerlist ol{
+    margin:0px;
+    padding-left: 20px;
+}
+.playerlist li{
+    margin:0px;
+    padding:0px;
+    font-size:14px;
+}

@@ -1,0 +1,225 @@
+<!doctype html5>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="mainCSS" type="text/css" rel="stylesheet" href="css/desktop/main.css">
+    <link id="bannerCSS" type="text/css" rel="stylesheet" href="css/desktop/banner.css">
+    <link id="introCSS" type="text/css" rel="stylesheet" href="css/desktop/intro.css">
+    <link id="mc" type="text/css" rel="stylesheet" href="css/desktop/mc.css">
+    <link id="aboutusCSS" type="text/css" rel="stylesheet" href="css/desktop/aboutus.css">
+    <link id="backgroundCSS" type="text/css" rel="stylesheet" href="css/desktop/background.css">
+</head>
+
+<body>
+    <div id="backdrop"><span></span></div>
+    <div class="banner">
+        <div id="topLeftCorner"></div>
+        <nav>
+            <a href="#home">
+                <h2>HOME</h2>
+            </a>
+            <a href="#bottom">
+                <h2>ABOUT US</h2>
+            </a>
+            <a href="#mc">
+                <h2>Minecraft</h2>
+            </a>
+        </nav>
+    </div>
+    <div class="frame">
+        <div class="innerFrameImgs">
+            <button onclick="changeFrame(1)"><img id="discordImg" src="img/discordLogo.jpg"></button>
+            <button><img id="tsImg" src="img/teamspeakLogo.png" onclick="changeFrame(2)"></button>
+        </div>
+        <button onclick="changeFrame('exit')" id="back">&#8594;</button>
+        <div id="discord">
+            <iframe height="600px" width="300px" src="https://discord.com/widget?id=711791563805556787&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div id="tsBox">
+            <div id="ts">
+                <div id="ts3viewer_1117613" style=""> </div>
+                <script src="https://static.tsviewer.com/short_expire/js/ts3viewer_loader.js"></script>
+                <script>
+                    var ts3v_url_1 = "https://www.tsviewer.com/ts3viewer.php?ID=1117613&text=757575&text_size=12&text_family=1&text_s_color=000000&text_s_weight=normal&text_s_style=normal&text_s_variant=normal&text_s_decoration=none&text_i_color=&text_i_weight=normal&text_i_style=normal&text_i_variant=normal&text_i_decoration=none&text_c_color=&text_c_weight=normal&text_c_style=normal&text_c_variant=normal&text_c_decoration=none&text_u_color=000000&text_u_weight=normal&text_u_style=normal&text_u_variant=normal&text_u_decoration=none&text_s_color_h=&text_s_weight_h=bold&text_s_style_h=normal&text_s_variant_h=normal&text_s_decoration_h=none&text_i_color_h=000000&text_i_weight_h=bold&text_i_style_h=normal&text_i_variant_h=normal&text_i_decoration_h=none&text_c_color_h=&text_c_weight_h=normal&text_c_style_h=normal&text_c_variant_h=normal&text_c_decoration_h=none&text_u_color_h=&text_u_weight_h=bold&text_u_style_h=normal&text_u_variant_h=normal&text_u_decoration_h=none&iconset=default_colored_2014_tsv";
+                    ts3v_display.init(ts3v_url_1, 1117613, 100);
+
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="upper">
+        <section id="home">
+            <div class="title">
+                <h1>S8 GAMING</h1>
+                <h2>COMMUNITY</h2>
+            </div>
+            <div class="slideshow">
+                <div class="slide fade">
+                    <img id="img-1" class="slideshow-img" src="img/slideshow/admin2.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Admin Map on MC</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-2" class="slideshow-img" src="img/slideshow/survival2.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Survival Map on MC</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-3" class="slideshow-img" src="img/slideshow/creative2.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Creative Map on MC</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-4" class="slideshow-img" src="img/slideshow/TRex_MC.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>TRex built in the Hub on MC</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-5" class="slideshow-img" src="img/slideshow/SOT_Sun_Mountain_1.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Sea of Thieves</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-6" class="slideshow-img" src="img/slideshow/SOT_Ocean_Bird_2.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Sea of Thieves</h1>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img id="img-7" class="slideshow-img" src="img/slideshow/SOT_Ocean_Ship_1.png" alt="">
+                    <div class="slideshow-caption">
+                        <h1>Sea of Thieves</h1>
+                    </div>
+                </div>
+                <div class="slide-bottom">
+                    <a class="prev" onclick="nextSlide(-1)"></a>
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                    </div>
+                    <a class="next" onclick="nextSlide(1)"></a>
+                </div>
+            </div>
+        </section>
+        <section id="aboutus">
+            <div class="aboutus">
+                <h2>What is Squad 8 Gaming?</h2>
+                <h3>S8 Gaming is a self-hosted game server. We plan on MC first, as it will be the easiest step off point. What you are reading right now is also apart of the game server, all built by 2. This server is hosted in New England, US (send help). We will also host a voice server for the peeps across the ocean on Teamspeak.</h3>
+                <br>
+                <h3>Don't expect us to be the best of the best, we plan on being a very casual and fun server network. MC will have regular gamemodes such as Survival and Creative, but we will be adding teambased gamemodes as the community grows, hunger games, death match, parkour and the like.</h3>
+                <br>
+                <h2>Road-Map</h2>
+                <h3>
+                    <ol>
+                        <li>Build Server icon and color palate</li>
+                        <li>Finish MC Server and release to public</li>
+                        <li>Start creating new areas for team based games</li>
+                    </ol>
+                </h3>
+            </div>
+        </section>
+        <section id="mc">
+            <div id="left-mc-container">
+                <div class="list">
+                <h2>Minecraft Server</h2>
+                <h4 style="margin-left: 15px;">play.s8gaming.net</h4>
+                <h3>Admins:</h3>
+                <div id="Admins">
+                    <h4>FlossedMeat</h4>
+                    <h4>Jogr0XD</h4>
+                </div>
+                <h3>Server Info: </h3>
+                <div class="ServerInfo">
+                    <ul>
+                        <li>Multiple maps with lays of the land to help you discover your next adventure.</li>
+                        <li>Permission list in for Roles</li>
+                    </ul>
+                    <h4>Rule List</h4>
+
+                </div>
+            </div>
+                <div class="ServerBanner">
+                    <h1>Minecraft 1.16.3 Maps</h1>
+                    <div class="map-container">
+                        <a class="link" id="pveAdmin" href = "https://www.s8gaming.net/minecraft/adminmap"'>
+                            <div class="ServerMap"><p>Admin Map</p></div>
+                        </a>
+
+                        <a class="link" id="pveCreative" href = "https://www.s8gaming.net/minecraft/creative">
+                            <div class="ServerMap"><p>Creative Map</p></div>
+                        </a>
+
+                        <a class="link" id="pveSurvival" href = "https://www.s8gaming.net/minecraft/survival">
+                            <div class="ServerMap"><p>Survival Map</p></div>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            <div class="ServerStats">
+                <div id="serverStatChild" style="border:green 5px solid; border-radius: 5px;">
+                    <div class="statChild" id="status">
+                        <h3>Survival:</h3>
+                        <!--<h3 id="servStatus" style="background-color: red">OFFLINE</h3>-->
+                        <h3 id="servStatus" style="background-color: green">Online</h3>
+                    </div>
+                    <div class="statChild" id="playerCount">
+                        <h3>Players: </h3>
+                        <h3>0/20</h3>
+                    </div>
+                    <h3>Player List:</h3>
+                    <div class="statChild" id="playerList">
+                        <p style="color:red">No Players Online</p>
+                    </div>
+                </div>
+                <div id="serverStatChild" style="border:green 5px solid; border-radius: 5px;">
+                    <div class="statChild" id="status">
+                        <h3>Creative:</h3>
+                        <h3 id="servStatus" style="background-color: green">Online</h3>
+                    </div>
+                    <div class="statChild" id="playerCount">
+                        <h3>Players: </h3>
+                        <h3>0/20</h3>
+                    </div>
+                    <h3>Player List:</h3>
+                    <div class="statChild" id="playerList">
+                        <p style="color:red">No Players Online</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bottom">
+            <footer>
+            <div class="title">
+                <h1>S8 GAMING</h1>
+                <h2>COMMUNITY</h2>
+            </div>
+            <h5>S8 Gaming's Website is subject to change</h5>
+            </footer>
+        </section>
+    </div>
+    <div class="streaks">
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </div>
+</body>
+<script src="js/slideShow.js"></script>
+<script src="js/global.js"></script>
+
+</html>
