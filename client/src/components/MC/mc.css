@@ -1,0 +1,103 @@
+#left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mc-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.list {
+    border:2px #c4161b solid;
+    padding :4px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    max-width: 500px;
+}
+.list h1 {
+    font-size: 30px;
+}
+#bottom-of-mc-info{
+    display: flex;
+    width:100%;
+    height:fit-content;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#bottom-of-mc-info button{
+    font-size: 20px;
+    cursor: pointer;
+    background: #b1161b;
+    text-decoration: none;
+}
+#bottom-of-mc-info a{
+    text-decoration: none;
+}
+#bottom-of-mc-info button:hover{
+    filter:brightness(1.25)
+}
+.list > * {
+    margin: 0px;
+    color: White;
+}
+ul{
+    margin: 0px;
+}
+#Admins{
+    margin-left:15px;
+}
+.ServerInfo {
+    margin-left: 15px;
+}
+.ServerInfo ul{
+    padding-left:10px;
+}
+.ServerInfo a{
+    text-decoration: none;
+    text-decoration: underline;
+    color:white;
+}
+.ServerInfo a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+    color:rgb(200,200,255);
+    font-size: 18px;
+}
+.ServerInfo p{
+    margin-left:5px;
+    color:rgb(215,215,215);
+    font-size:12px;
+}
+#rules-button{
+    width: fit-content
+}
+#tile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen
+and (max-width: 530px){
+    #left-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #mc-info-container{
+        margin-right:0px;
+    }
+}
+#map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen
+and (max-width: 530px){
+    #map-container{
+        display: none;
+    }
+}

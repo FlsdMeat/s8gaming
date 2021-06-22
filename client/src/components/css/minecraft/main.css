@@ -1,0 +1,112 @@
+
+#mc-servers{
+    display: flex;
+    flex-direction: row;
+}
+#mc-rules-global{
+    color: white;
+    min-width: 200px;
+    min-height:200px;
+    display: flex;
+    flex-direction: column;
+}
+#mc-rules-global > div{
+    background-color: rgb(100, 24, 24);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+@media only screen
+and (max-width: 515px){
+    #mc-servers h2{
+        font-size: 20px;
+    }
+    #mc-servers h3{
+        font-size: 16px;
+    }
+    #mc-servers li{
+        font-size: 15px;
+    }
+    #mc-rules-global h3{
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+    #mc-rules-global li{
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    #mc-rules-global > div ol{
+        padding-bottom: 0;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    #mc-rules-global > div{
+        background-color: rgb(100, 24, 24);
+        padding: 2px;
+        margin-top: 5px;
+        border-radius: 5px;
+        height: fit-content;
+    }
+}
+#minecraft-directory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+#ranks-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width:600px;
+    max-height: 500px;
+}
+.ranks-tiles{
+    border-radius: 3px;
+    padding: 3px;
+    margin:5px;
+    width: 170px;
+}
+.ranks-tiles h4{
+    font-size: 14px;
+}
+@media only screen
+and (max-width: 515px){
+    #rank-section h2{
+        font-size: 18px;
+    }
+    .ranks-tiles{
+        width: 120px;
+    }
+    .ranks-tiles h3{
+        font-size: 11px;
+    }
+    .ranks-tiles h4{
+        font-size: 9px;
+    }
+    #minecraft-directory{
+        max-width: 80%;
+    }
+    #directory-section h1{
+        font-size: 20px;
+    }
+    #directory-section h2{
+        font-size: 18px;
+    }
+    #directory-section h4{
+        font-size: 14px;
+    }
+}
+@media only screen
+and (max-width: 615px){
+    #directory-section{
+        display: none;
+    }
+}
+.minecraft-server-info li{
+    list-style: none;
+}
+.nostylelink:visited{
+    color:white;
+}

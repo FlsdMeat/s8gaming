@@ -1,0 +1,18 @@
+@font-face{
+    font-family: varela;
+    src:url("./fonts/Varela-Regular.ttf");
+    font-display: swap;
+    font-style:normal;
+}
+@font-face{
+    font-family:roboto-condensed-bold;
+    font-display: swap;
+    font-style:normal;
+    src:url("./fonts/roboto-condensed/RobotoCondensed-Bold.ttf");
+}
+@font-face{
+    font-family:roboto-condensed-regular;
+    font-display: swap;
+    font-style:normal;
+    src:url("./fonts/roboto-condensed/RobotoCondensed-Regular.ttf");
+}

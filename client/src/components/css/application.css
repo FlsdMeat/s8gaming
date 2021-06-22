@@ -1,0 +1,31 @@
+#application{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.application-inputs{
+    width:400px;
+    margin-bottom: 10px;
+}
+#application-role-help{
+    color:white;
+    background-color: #c4161b;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#application-where label{
+    color:white;
+}
+#application-where input{
+    margin-right:15px;
+}
+#application-submit{
+    margin:10px;
+    background-color: #eeeeee;
+    font-size: 20px;
+
+}
+#application-submit:hover{
+    filter: brightness(1.25);
+    cursor: pointer;
+}

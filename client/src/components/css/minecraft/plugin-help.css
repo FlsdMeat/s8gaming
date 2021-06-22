@@ -1,0 +1,63 @@
+.plugin-help-container{
+    width: 500px;
+    height: 500px;
+    border:2px #c4161b solid;
+    border-radius: 4px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+.plugin-help-children{
+    width: 100%;
+}
+.plugin-help-container::-webkit-scrollbar-thumb {
+    background-color: #91161b;
+}
+.plugin-help-container::-webkit-scrollbar {
+    background-color: transparent;
+    width:6px;
+}
+.plugin-help-container h1{
+    margin: 0;
+    width:fit-content;
+    padding: 2px 3px;
+}
+.plugin-help-container a{
+    text-decoration: none;
+}
+.plugin-help-divider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plugin-help-divider ul{
+    list-style: none;
+}
+.plugin-help-divider h3{
+    width: fit-content;
+    background: #91161b;
+    padding: 2px;
+    border-radius: 4px;
+}
+.plugin-help-divider p{
+    font-size: 14px;
+}
+@media only screen
+and (max-width: 515px){
+    .plugin-help-container{
+        width: 75%;
+        height: 90%;
+    }
+    .plugin-help-container h2, a{
+        font-size: 20px;
+    }
+    .plugin-help-container h3{
+        font-size: 15px;
+    }
+    .plugin-help-container p{
+        font-size: 13px;
+    }
+}

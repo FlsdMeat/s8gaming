@@ -1,0 +1,103 @@
+.mcTile{
+    border:2px#c4161b solid;
+    padding: 2px 5px;
+    border-radius: 2%;
+    height:300px;
+    width: 218px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.mcTile-refresh{
+    position: absolute;
+    right:10px;
+    top:5px;
+    margin: 0;
+    padding:1px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #89161b 2px 3px 0px 0px;
+}
+.mcTile-refresh:active{
+    transform: translateX(2px) translateY(3px);
+}
+.mcTile-refresh h3{
+    position: relative;
+    top:-2px;
+    height: fit-content;
+    width: fit-content;
+}
+.mcTile h2{
+    font-size: 22px;
+}
+.mcTile h3{
+    font-size: 20px;
+}
+.mcTile h4{
+    font-size: 18px;
+}
+.mcTile h5{
+    font-size: 14px;
+}
+.serverTitle{
+    display: flex;
+    justify-content: center;
+}
+.serverTitle h2{
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.playerlist{
+    flex-grow: 1;
+    border:1px red solid;
+    background-color: rgb(122,23,27);
+    overflow-y: scroll;
+}
+.playerlist::-webkit-scrollbar{
+    display: none;
+}
+.playerlist ol{
+    list-style-position: inside;
+    padding:0px;
+    padding-left: 3px;
+    margin:0px;
+    color:white;
+}
+.mc-plugin-container{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mc-plugin-window{
+    background: #253038;
+    overflow-y: scroll;
+    max-height: 500px;
+    padding:10px;
+    border-radius: 5px;
+    position: relative;
+}
+.mc-plugin-window::-webkit-scrollbar{
+    display: none;
+}
+.mc-plugin-window ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.mc-plugin-window h3{
+    font-size: 18px;
+}

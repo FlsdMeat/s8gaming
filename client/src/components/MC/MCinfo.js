@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import MCServerTile from './MCServerTile';
-import S8RulesMc from '../S8RulesMc';
-import "../../css/desktop/mc.css"
+import S8RulesMc from '../S8MainPageRules';
+import "./mc.css"
+import {Link} from "react-router-dom"
 
 class MCinfo extends Component{
     constructor(props){
@@ -22,31 +22,37 @@ class MCinfo extends Component{
     render(){
         return(
             <React.Fragment>
-                <div id="left-mc-container">
-                    <div className="list">
-                        <h2>Minecraft Server</h2>
-                        <h4>play.s8gaming.net</h4>
-                        <h3>Admins:</h3>
-                            <div id="Admins">
-                                <h4>FlossedMeat</h4>
-                                <h4>Jogr0XD</h4>
+                <div id="left-container">
+                    <div id="mc-info-container">
+                        <div className="list">
+                            <h1>S8 Minecraft Server</h1>
+                            <h3>play.s8gaming.net</h3>
+                            <h2>Staff:</h2>
+                                <div id="Admins">
+                                    <h3>FlossedMeat</h3>
+                                </div>
+                            <h2>Server Info: </h2>
+                                <div className="ServerInfo">
+                                    <ul>
+                                        <h4>Hosted by FlossedMeat</h4>
+                                        <h4>BungeeCord Proxy</h4>
+                                        <h4>Regular Server Restarts Every 6 Hours</h4>
+                                        <h4>Full Server Host Restart 2x a week</h4>
+                                    </ul>
+                                </div>
+                            <div id="bottom-of-mc-info">
+                                <button onClick={this.handleClick}><h3>Rule List</h3></button>
+                                <button><Link to="/minecraft"><h3>More Info</h3></Link></button>
                             </div>
-                        <h3>Server Info: </h3>
-                            <div className="ServerInfo">
-                                <ul>
-                                    <li>A map of each server</li>
-                                    <li>Permission list in for Roles</li>
-                                </ul>
                             </div>
-                        <button onClick={this.handleClick}><h3>Rule List</h3></button>
+                        <div style={{display:this.state.showRules}}>
+                            <S8RulesMc button={this.handleClick}/>
                         </div>
-                    <div style={{display:this.state.showRules}}>
-                        <S8RulesMc button={this.handleClick}/>
                     </div>
                 </div>
-                <div id="tile-container"><MCServerTile/></div>
             </React.Fragment>
         )
     }
 }
 export default MCinfo;
+//<div id="tile-container"><MCServerTile/></div>

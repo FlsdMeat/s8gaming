@@ -1,0 +1,22 @@
+.nav-child{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.nav-child a{
+    margin: 0px;
+    width:fit-content;
+    text-align: center;
+}
+@media only screen
+and (max-width: 515px){
+    .nav-child{
+        margin: 0px 2px;
+    }
+    .nav-child h2{
+        font-size: 20px;
+        margin: 2px;
+    }
+}
